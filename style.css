@@ -1,4 +1,78 @@
-#footer {
+/* Image is not responsive */
+img {
+    margin: 15px 0px 0px 15px;
+    height: 450px;
+    width: 850px;
+}
+
+/* PARENT container needs a position for the CHILD element's ABSOLUTE position to wok*/
+.image-container {
+    position: relative; /* position is relative to its normal position*/
+}
+
+/* CHILD element*/
+.overlay {
+    /* Text styling */
+    color: white;
+    font-family: "Sofia Sans Semi Condensed", sans-serif; /* google font */
+    font-size: 100px;
+    font-variant: bold;  
+
+    /* For vertical positioning */
+    position: absolute; /* Position is relative to the 1) nearest 2) positioned 3) PARENT element */
+    top: 40%; /* Position this (CHILD) element 50% from the top of its PARENT element */
+    
+    /* For horizontal positioning*/
+    width: 850px; /* same as the image that it overlays (image was 850px) */
+    text-align: center;
+}
+
+footer {
+    margin: 15px 0px 0px 15px;
+    background-color: rgb(230, 230, 230);
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    height: 324px;
+    width: 850px;
     display: flex;
-    background-color: red;
+    justify-content: space-between;
+}
+
+section {
+    width: 270px;
+    margin: 30px;
+}
+
+h1 {
+    margin: 0pt 0pt 20pt 5pt; /* headings have default margin, so must set to 0 if want no margin*/
+}
+
+p {
+    font-size: 10pt;
+    margin: 5pt;
+}
+
+form {
+    font-size: 10pt;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 5pt;
+}
+
+input {
+    margin: 0% 0% 3% 0%;
+    border-color: transparent;
+}
+
+#message {
+    height: 50pt;
+}
+
+#send {
+    color: white;
+    background-color: rgb(77,77,77);
+    font-size: 15px;
+    font-weight: bold;
+    width: 25%;
+    padding: 0px;
 }
