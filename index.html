@@ -2,25 +2,40 @@
 <html lang="en">
 <head>
     <title>My Nasa Page</title>
-    <link rel="stylesheet" ref="style.css"></link>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed">
 </head>
 <body>
-    <img src="stars.jpg" alt="stars in the galaxy"/>
-    <footer id="footer">
+    <div class="image-container">
+        <img src="stars.jpg" alt="stars in the galaxy"/>
+        <div class="overlay">NASA</div>
+    </div>
+    <footer>
         <section>
-            <p>Social Media</p>
+            <h1>Social Media</h1>
             <p>Twitter - @nasa</p>
             <p>Facebook - fb.com/nasa</p>
             <p>Instagram - @nasa</p>
             <p>Youtube - youtube.com/NASA</p>
         </section>
         <section>
-            <p>Office Info</p>
+            <h1>OFFICE INFO</h1>
             <p>Public Communications Office</p>
+            <p>NASA Headquarters</p>
             <p>300 E. Street SW. Suite 5R30</p>
             <p>Washington, DC 20546</p>
             <p>(202) 358-0001 (Office)</p>
             <p>(202) 358-4338 (Fax)</p>
+        </section>
+        <section>
+            <h1>CONTACT US</h1>
+            <form>
+                Name
+                <input type="text" name="name">
+                Message
+                <input id="message" type="text" name="message">
+                <input id="send" type="submit" name="send" value="send">
+              </form>    
         </section>
     </footer>
 
