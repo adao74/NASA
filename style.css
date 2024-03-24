@@ -19,6 +19,10 @@ https://www.w3schools.com/css/css3_box-sizing.asp */
 }
 
 
+.hide {
+  display: none;
+}
+
 img {
     margin: 15px 0px 0px 15px;
     height: 450px;
